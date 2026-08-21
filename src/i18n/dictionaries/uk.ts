@@ -1,0 +1,88 @@
+import type { Dictionary } from "./type";
+
+const uk: Dictionary = {
+  meta: {
+    title: "YAMMI · Аня Ямшанова, UX/UI дизайнерка",
+    description:
+      "UX/UI дизайнерка, що фокусується на інтерфейсах та AI. Живе в Німеччині, відкрита до переїзду.",
+  },
+  nav: {
+    home: "Головна",
+    works: "Роботи",
+    about: "Про мене",
+    contact: "Контакти",
+  },
+  home: {
+    kicker: "UX/UI ДИЗАЙН · AI",
+    name: "Ania Yamshanova",
+    role: "UX/UI дизайнерка, Інтерфейси × AI",
+    tagline:
+      "Проєктую чіткі, конверсійні інтерфейси для B2C-продуктів, від e-commerce до AI-інструментів.",
+    ctaWorks: "Переглянути роботи",
+    ctaAbout: "Про мене",
+    ctaContact: "Написати",
+    tags: ["МЕНТАЛЬНЕ ЗДОРОВ'Я", "EDTECH", "AUTOMOTIVE", "E-COMMERCE", "VIBECODING"],
+    location: "НІМЕЧЧИНА · ВІДКРИТА ДО ПЕРЕЇЗДУ",
+    scrollHint: "СКРОЛ",
+  },
+  about: {
+    kicker: "ПРО МЕНЕ",
+    title: "Ania Yamshanova",
+    intro: [
+      "UX/UI дизайнерка з фокусом на інтерфейси та AI. Три роки досвіду, живу в Німеччині.",
+      "Останні шість місяців досліджую vibecoding: прототипування за допомогою AI, яке дозволяє пройти шлях від ідеї до робочого продукту швидше, не втрачаючи точності дизайну.",
+      "Проєктую B2C веб-продукти, спеціалізуюсь на e-commerce та повноцінному веб-дизайні. Реалізувала рішення, орієнтовані на користувача, у fashion, дизайні інтер'єрів, FinTech та мистецтві, поєднуючи сильну UX-базу з чистим, конверсійним UI.",
+    ],
+    factsLabel: "ФАКТИ",
+    facts: [
+      { label: "Досвід", value: "3 роки" },
+      { label: "Локація", value: "Німеччина" },
+      { label: "Переїзд", value: "Відкрита" },
+      { label: "Фокус", value: "UI × AI" },
+      { label: "Vibecoding", value: "6 місяців" },
+    ],
+    skillsLabel: "ІНСТРУМЕНТИ",
+    skills: [
+      "UX Research",
+      "UI Design",
+      "Дизайн-системи",
+      "E-commerce UX",
+      "Конверсійний дизайн",
+      "AI-прототипування",
+      "Vibecoding",
+    ],
+    industriesLabel: "ІНДУСТРІЇ",
+    industries: ["Ментальне здоров'я", "EdTech", "Automotive", "E-commerce"],
+    ctaContact: "Зв'язатися",
+    ctaWorks: "Переглянути роботи",
+  },
+  works: {
+    kicker: "ВИБРАНІ РОБОТИ",
+    title: "Роботи",
+    subtitle: "Чотири B2C-продукти: mental health, edtech, automotive і e-commerce.",
+    viewProject: "Переглянути проєкт",
+    index: "ІНДЕКС",
+  },
+  project: {
+    backToWorks: "Усі роботи",
+    overviewLabel: "Огляд",
+    roleLabel: "Роль",
+    yearLabel: "Рік",
+    industryLabel: "Індустрія",
+    platformLabel: "Платформа",
+    toolsLabel: "Інструменти",
+    challengeLabel: "Виклик",
+    approachLabel: "Підхід",
+    outcomeLabel: "Результат",
+    resultsLabel: "Результати",
+    prevProject: "Попередній",
+    nextProject: "Наступний",
+    viewLive: "Відкрити посилання",
+  },
+  footer: {
+    rights: "Усі права захищено.",
+    backToTop: "Нагору",
+  },
+};
+
+export default uk;

@@ -1,0 +1,88 @@
+import type { Dictionary } from "./type";
+
+const de: Dictionary = {
+  meta: {
+    title: "YAMMI · Ania Yamshanova, UX/UI Designerin",
+    description:
+      "UX/UI-Designerin mit Fokus auf Interfaces und KI. Ansässig in Deutschland, offen für Umzug.",
+  },
+  nav: {
+    home: "Start",
+    works: "Arbeiten",
+    about: "Über mich",
+    contact: "Kontakt",
+  },
+  home: {
+    kicker: "UX/UI DESIGN · KI",
+    name: "Ania Yamshanova",
+    role: "UX/UI Designerin, Interfaces × KI",
+    tagline:
+      "Ich gestalte klare, konversionsstarke Interfaces für B2C-Produkte, von E-Commerce bis zu KI-gestützten Tools.",
+    ctaWorks: "Arbeiten ansehen",
+    ctaAbout: "Über mich",
+    ctaContact: "Hallo sagen",
+    tags: ["MENTAL HEALTH", "EDTECH", "AUTOMOTIVE", "E-COMMERCE", "VIBECODING"],
+    location: "DEUTSCHLAND · OFFEN FÜR UMZUG",
+    scrollHint: "SCROLLEN",
+  },
+  about: {
+    kicker: "ÜBER MICH",
+    title: "Ania Yamshanova",
+    intro: [
+      "UX/UI-Designerin mit Fokus auf Interfaces und KI. Drei Jahre Erfahrung, ansässig in Deutschland.",
+      "Seit sechs Monaten beschäftige ich mich mit Vibecoding: KI-gestütztem Prototyping, mit dem ich vom Konzept schneller zu einem funktionierenden Produkt komme, ohne Designpräzision zu verlieren.",
+      "Ich gestalte B2C-Webprodukte mit Schwerpunkt auf E-Commerce und vollständigem Website-Design. Ich habe nutzerzentrierte Lösungen in den Bereichen Fashion, Interior Design, FinTech und Kunst umgesetzt, mit soliden UX-Grundlagen und klarem, konversionsstarkem UI.",
+    ],
+    factsLabel: "FAKTEN",
+    facts: [
+      { label: "Erfahrung", value: "3 Jahre" },
+      { label: "Standort", value: "Deutschland" },
+      { label: "Umzug", value: "Offen" },
+      { label: "Fokus", value: "UI × KI" },
+      { label: "Vibecoding", value: "6 Monate" },
+    ],
+    skillsLabel: "TOOLKIT",
+    skills: [
+      "UX Research",
+      "UI Design",
+      "Design Systems",
+      "E-Commerce UX",
+      "Konversionsorientiertes Design",
+      "KI-gestütztes Prototyping",
+      "Vibecoding",
+    ],
+    industriesLabel: "BRANCHEN",
+    industries: ["Mental Health", "EdTech", "Automotive", "E-Commerce"],
+    ctaContact: "Kontakt aufnehmen",
+    ctaWorks: "Arbeiten ansehen",
+  },
+  works: {
+    kicker: "AUSGEWÄHLTE ARBEITEN",
+    title: "Arbeiten",
+    subtitle: "Vier B2C-Produkte aus Mental Health, EdTech, Automotive und E-Commerce.",
+    viewProject: "Projekt ansehen",
+    index: "INDEX",
+  },
+  project: {
+    backToWorks: "Alle Arbeiten",
+    overviewLabel: "Überblick",
+    roleLabel: "Rolle",
+    yearLabel: "Jahr",
+    industryLabel: "Branche",
+    platformLabel: "Plattform",
+    toolsLabel: "Tools",
+    challengeLabel: "Herausforderung",
+    approachLabel: "Ansatz",
+    outcomeLabel: "Ergebnis",
+    resultsLabel: "Ergebnisse",
+    prevProject: "Vorheriges",
+    nextProject: "Nächstes",
+    viewLive: "Live-Link öffnen",
+  },
+  footer: {
+    rights: "Alle Rechte vorbehalten.",
+    backToTop: "Nach oben",
+  },
+};
+
+export default de;
