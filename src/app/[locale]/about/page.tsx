@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -56,6 +57,21 @@ export default async function AboutPage({
 
           <div className="space-y-10 border-t border-line pt-8 sm:border-l sm:border-t-0 sm:pl-10 sm:pt-0">
             <Reveal>
+              <div className="relative aspect-[4/5] w-full overflow-hidden border border-line">
+                <Image
+                  src="/about/ania-portrait.jpg"
+                  alt={dict.about.title}
+                  fill
+                  className="object-cover"
+                  sizes="280px"
+                  priority
+                />
+                <div className="tech-grid pointer-events-none absolute inset-0" />
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-accent/70 animate-scan" />
+              </div>
+            </Reveal>
+
+            <Reveal delay={0.02}>
               <p className="font-mono text-xs tracking-widest text-ink-soft">
                 {dict.about.factsLabel}
               </p>
