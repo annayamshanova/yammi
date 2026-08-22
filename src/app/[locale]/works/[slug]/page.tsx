@@ -14,6 +14,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { ProjectVisual } from "@/components/ProjectVisual";
 import { Reveal } from "@/components/Reveal";
+import { ScrollPlayVideo } from "@/components/ScrollPlayVideo";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) =>
@@ -265,14 +266,10 @@ export default async function ProjectPage({
               </p>
             </Reveal>
             <Reveal delay={0.05}>
-              <div className="relative mx-auto aspect-[732/1522] w-full max-w-xs overflow-hidden border border-line">
-                <video
+              <div className="relative mx-auto aspect-[732/1522] w-full max-w-xs overflow-hidden rounded-[82px] border border-line">
+                <ScrollPlayVideo
                   src={meta.video.src}
                   poster={meta.video.poster}
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
                   className="h-full w-full object-cover"
                 />
                 <div className="tech-grid pointer-events-none absolute inset-0" />
