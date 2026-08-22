@@ -34,6 +34,12 @@ export function SiteFooter({
           >
             LinkedIn
           </a>
+          <Link
+            href={`/${locale}/impressum`}
+            className="hover:text-accent transition-colors"
+          >
+            Impressum
+          </Link>
         </div>
       </div>
     </footer>

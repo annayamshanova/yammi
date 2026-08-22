@@ -139,7 +139,15 @@ export function HomeHero({
         transition={{ duration: 0.6, delay: 0.5 }}
         className="flex flex-wrap items-center justify-between gap-3 pb-6 font-mono text-[11px] tracking-widest text-ink-soft sm:pb-8"
       >
-        <span>{dict.home.location}</span>
+        <div className="flex items-center gap-4">
+          <span>{dict.home.location}</span>
+          <Link
+            href={`/${locale}/impressum`}
+            className="opacity-60 hover:opacity-100 hover:text-accent transition-opacity"
+          >
+            Impressum
+          </Link>
+        </div>
         <div className="hidden flex-wrap gap-x-4 gap-y-1 sm:flex">
           {dict.home.tags.map((tag) => (
             <span key={tag} className="opacity-60">
