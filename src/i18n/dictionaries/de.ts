@@ -31,7 +31,7 @@ const de: Dictionary = {
     intro: [
       "UX/UI-Designerin mit Fokus auf Interfaces und KI. Drei Jahre Erfahrung, ansässig in Deutschland.",
       "Seit sechs Monaten beschäftige ich mich mit Vibecoding: KI-gestütztem Prototyping, mit dem ich vom Konzept schneller zu einem funktionierenden Produkt komme, ohne Designpräzision zu verlieren.",
-      "Ich gestalte B2C-Webprodukte mit Schwerpunkt auf E-Commerce und vollständigem Website-Design. Ich habe nutzerzentrierte Lösungen in den Bereichen Fashion, Interior Design, FinTech und Kunst umgesetzt, mit soliden UX-Grundlagen und klarem, konversionsstarkem UI.",
+      "Ich gestalte B2C-Webprodukte mit Schwerpunkt auf E-Commerce und vollständigem Website-Design. Ich habe nutzerzentrierte Lösungen in den Bereichen Mental Health, EdTech, Automotive und E-Commerce umgesetzt, mit soliden UX-Grundlagen und klarem, konversionsstarkem UI. Ich lerne gerade, mit B2B-Kund:innen zu arbeiten, und möchte mich in diese Richtung weiterentwickeln.",
     ],
     factsLabel: "FAKTEN",
     facts: [
@@ -41,7 +41,7 @@ const de: Dictionary = {
       { label: "Fokus", value: "UI × KI" },
       { label: "Vibecoding", value: "6 Monate" },
     ],
-    skillsLabel: "TOOLKIT",
+    skillsLabel: "SKILLS",
     skills: [
       "UX Research",
       "UI Design",
@@ -51,6 +51,8 @@ const de: Dictionary = {
       "KI-gestütztes Prototyping",
       "Vibecoding",
     ],
+    toolsLabel: "TOOLS",
+    tools: ["Figma", "Claude Code", "Vercel", "GitHub", "Webflow", "Framer"],
     industriesLabel: "BRANCHEN",
     industries: ["Mental Health", "EdTech", "Automotive", "E-Commerce"],
     ctaContact: "Kontakt aufnehmen",

@@ -106,6 +106,22 @@ export default async function AboutPage({
               </div>
             </Reveal>
 
+            <Reveal delay={0.08}>
+              <p className="font-mono text-xs tracking-widest text-ink-soft">
+                {dict.about.toolsLabel}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {dict.about.tools.map((tool) => (
+                  <span
+                    key={tool}
+                    className="border border-line px-2.5 py-1 font-mono text-[11px] tracking-wide text-ink-soft"
+                  >
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </Reveal>
+
             <Reveal delay={0.1}>
               <p className="font-mono text-xs tracking-widest text-ink-soft">
                 {dict.about.industriesLabel}

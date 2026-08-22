@@ -31,7 +31,7 @@ const uk: Dictionary = {
     intro: [
       "UX/UI дизайнерка з фокусом на інтерфейси та AI. Три роки досвіду, живу в Німеччині.",
       "Останні шість місяців досліджую vibecoding: прототипування за допомогою AI, яке дозволяє пройти шлях від ідеї до робочого продукту швидше, не втрачаючи точності дизайну.",
-      "Проєктую B2C веб-продукти, спеціалізуюсь на e-commerce та повноцінному веб-дизайні. Реалізувала рішення, орієнтовані на користувача, у fashion, дизайні інтер'єрів, FinTech та мистецтві, поєднуючи сильну UX-базу з чистим, конверсійним UI.",
+      "Проєктую B2C веб-продукти, спеціалізуюсь на e-commerce та повноцінному веб-дизайні. Реалізувала рішення, орієнтовані на користувача, у mental health, edtech, automotive та e-commerce, поєднуючи сильну UX-базу з чистим, конверсійним UI. Навчаюся співпрацювати з B2B і шукаю розвитку в цьому напрямку.",
     ],
     factsLabel: "ФАКТИ",
     facts: [
@@ -41,7 +41,7 @@ const uk: Dictionary = {
       { label: "Фокус", value: "UI × AI" },
       { label: "Vibecoding", value: "6 місяців" },
     ],
-    skillsLabel: "ІНСТРУМЕНТИ",
+    skillsLabel: "НАВИЧКИ",
     skills: [
       "UX Research",
       "UI Design",
@@ -51,6 +51,8 @@ const uk: Dictionary = {
       "AI-прототипування",
       "Vibecoding",
     ],
+    toolsLabel: "ІНСТРУМЕНТИ",
+    tools: ["Figma", "Claude Code", "Vercel", "GitHub", "Webflow", "Framer"],
     industriesLabel: "ІНДУСТРІЇ",
     industries: ["Ментальне здоров'я", "EdTech", "Automotive", "E-commerce"],
     ctaContact: "Зв'язатися",

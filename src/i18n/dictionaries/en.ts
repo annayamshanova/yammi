@@ -21,6 +21,8 @@ const en: {
     facts: { label: string; value: string }[];
     skillsLabel: string;
     skills: string[];
+    toolsLabel: string;
+    tools: string[];
     industriesLabel: string;
     industries: string[];
     ctaContact: string;
@@ -89,7 +91,7 @@ const en: {
     intro: [
       "UX/UI designer with a focus on interfaces and AI. Three years of experience, based in Germany.",
       "For the past six months I've been exploring vibecoding: AI-assisted prototyping that takes me from concept to a working product faster, without losing design precision.",
-      "I design B2C web products, specialising in e-commerce and full-scale website design. I've delivered user-centered solutions across fashion, interior design, FinTech, and art, combining strong UX foundations with clean, conversion-focused UI.",
+      "I design B2C web products, specialising in e-commerce and full-scale website design. I've delivered user-centered solutions across mental health, edtech, automotive, and e-commerce, combining strong UX foundations with clean, conversion-focused UI. I'm learning to work with B2B clients and want to grow further in that direction.",
     ],
     factsLabel: "FACTS",
     facts: [
@@ -99,7 +101,7 @@ const en: {
       { label: "Focus", value: "UI × AI" },
       { label: "Vibecoding", value: "6 months" },
     ],
-    skillsLabel: "TOOLKIT",
+    skillsLabel: "SKILLS",
     skills: [
       "UX Research",
       "UI Design",
@@ -109,6 +111,8 @@ const en: {
       "AI-assisted Prototyping",
       "Vibecoding",
     ],
+    toolsLabel: "TOOLS",
+    tools: ["Figma", "Claude Code", "Vercel", "GitHub", "Webflow", "Framer"],
     industriesLabel: "INDUSTRIES",
     industries: ["Mental Health", "EdTech", "Automotive", "E-commerce"],
     ctaContact: "Get in touch",
