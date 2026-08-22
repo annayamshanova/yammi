@@ -132,7 +132,7 @@ const en: ProjectDictionary = {
     challenge:
       "Junior designers face a catch-22: you need commercial experience to get hired, but you need to get hired to gain that experience. Courses teach theory, and juniors miss the real feedback, don't grasp the constraints, and underestimate the responsibility of an actual project, so coursework rarely earns an employer's trust.",
     approach:
-      "Before designing anything, I interviewed juniors, mid-to-senior designers, and HR specialists. I expected seniors to become mentors, but they don't have the time or motivation to delegate real work to juniors, often because of NDAs. The real audience turned out to be mid-level designers: mentoring gives them practice on the way to a lead role, plus income. That finding changed the whole product logic for me, from 'seniors delegate tasks' to 'mids mentor and grow'. From there: user flows, wireframes, a basic design system, a high-fidelity clickable prototype, and a promo landing page. I built it all around one core loop: a junior takes a task, gets mentor feedback, and I mark the work verified.",
+      "Before designing anything, I interviewed juniors, mid-to-senior designers, and HR specialists. I expected seniors to become mentors, but they don't have the time or motivation to delegate real work to juniors, often because of NDAs. The real audience turned out to be mid-level designers: mentoring gives them practice on the way to a lead role, and paid sessions on the platform bring in income. That finding changed the whole product logic for me, from 'seniors delegate tasks' to 'mids mentor and grow'. From there: user flows, wireframes, a basic design system, a high-fidelity clickable prototype, and a promo landing page. I built it all around one core loop: a junior takes a task, gets mentor feedback, and I mark the work verified.",
     outcome:
       "A researched, validated MVP concept: user personas, flows, a high-fidelity prototype, and a live promo landing page. A project I want to build and launch.",
     results: [
@@ -172,7 +172,7 @@ const en: ProjectDictionary = {
     research:
       "I started with a market analysis. There were no direct competitors, so I studied 10 comparable apps for their strengths and weaknesses. Then I surveyed 30 people from the target audience through Google Forms. The results confirmed the concept was interesting and viable, and showed what people expect from an app like this.",
     userFlow:
-      "I mapped the main user journeys. For the MVP I picked three key scenarios: onboarding and subscribing, finding a book and picking it up from a shelf, and returning a book by scanning its QR code.",
+      "I mapped the main user journeys. For the MVP I picked three key scenarios: onboarding and subscribing, finding a book and picking it up from a 'shelf', and returning a book by scanning its QR code.",
     designProcess:
       "I moved from low-fidelity wireframes to high-fidelity screens. Alongside that, I designed a logo, chose fonts and a color palette, defined the tone of voice, and built a basic design system. After that, I put together detailed, clickable prototypes.",
     scope: {
@@ -201,7 +201,7 @@ const en: ProjectDictionary = {
     outcome:
       "A complete MVP concept, from research to a high-fidelity, investor-ready prototype, built solo in four days with a design system that can scale.",
     results: [
-      "Took an MVP from concept to a dev-ready handoff in 4 days",
+      "Built the MVP in a short window: from concept to a dev-ready handoff",
       "Surveyed 30 people and analyzed 10 comparable apps before designing",
       "Built a scalable design system: logo, palette, type, and components",
       "Ran research, design, and prototyping solo end to end",
@@ -237,7 +237,7 @@ const de: ProjectDictionary = {
     challenge:
       "Junior-Designer:innen stecken in einer Zwickmühle: Um eingestellt zu werden, braucht man kommerzielle Erfahrung, aber um die zu bekommen, muss man erst eingestellt werden. Kurse vermitteln Theorie, und Juniors bekommen kein echtes Feedback, verstehen die Constraints nicht und unterschätzen die Verantwortung eines echten Projekts, deshalb gewinnen Kursarbeiten selten das Vertrauen von Arbeitgeber:innen.",
     approach:
-      "Bevor ich etwas gestaltet habe, habe ich Juniors, Mid- bis Senior-Designer:innen und HR-Spezialist:innen befragt. Ich hatte erwartet, dass Seniors zu Mentor:innen werden, aber sie haben weder die Zeit noch die Motivation, echte Arbeit an Juniors zu delegieren, oft wegen NDAs. Die eigentliche Zielgruppe waren Mid-Level-Designer:innen: Mentoring gibt ihnen Praxis auf dem Weg zur Lead-Rolle, plus Einkommen. Dieser Befund hat für mich die gesamte Produktlogik verändert, von 'Seniors delegieren Aufgaben' zu 'Mids mentoren und wachsen'. Danach: User Flows, Wireframes, ein einfaches Designsystem, ein High-Fidelity-Klickprototyp und eine Promo-Landingpage. Ich habe alles um einen Kernloop gebaut: Ein Junior übernimmt eine Aufgabe, bekommt Feedback vom Mentor, und ich markiere die Arbeit als verifiziert.",
+      "Bevor ich etwas gestaltet habe, habe ich Juniors, Mid- bis Senior-Designer:innen und HR-Spezialist:innen befragt. Ich hatte erwartet, dass Seniors zu Mentor:innen werden, aber sie haben weder die Zeit noch die Motivation, echte Arbeit an Juniors zu delegieren, oft wegen NDAs. Die eigentliche Zielgruppe waren Mid-Level-Designer:innen: Mentoring gibt ihnen Praxis auf dem Weg zur Lead-Rolle, und bezahlte Sessions auf der Plattform bringen Einkommen. Dieser Befund hat für mich die gesamte Produktlogik verändert, von 'Seniors delegieren Aufgaben' zu 'Mids mentoren und wachsen'. Danach: User Flows, Wireframes, ein einfaches Designsystem, ein High-Fidelity-Klickprototyp und eine Promo-Landingpage. Ich habe alles um einen Kernloop gebaut: Ein Junior übernimmt eine Aufgabe, bekommt Feedback vom Mentor, und ich markiere die Arbeit als verifiziert.",
     outcome:
       "Ein recherchiertes, validiertes MVP-Konzept: User Personas, Flows, ein High-Fidelity-Prototyp und eine live Promo-Landingpage. Ein Projekt, das ich bauen und launchen möchte.",
     results: [
@@ -277,7 +277,7 @@ const de: ProjectDictionary = {
     research:
       "Ich habe mit einer Marktanalyse angefangen. Es gab keine direkten Konkurrenten, also habe ich 10 vergleichbare Apps auf Stärken und Schwächen untersucht. Danach habe ich 30 Personen aus der Zielgruppe über Google Forms befragt. Die Ergebnisse bestätigten, dass das Konzept interessant und tragfähig ist, und zeigten, was Nutzer:innen von so einer App erwarten.",
     userFlow:
-      "Ich habe die wichtigsten User Journeys kartiert. Für das MVP habe ich drei zentrale Szenarien ausgewählt: Onboarding und Abo, ein Buch finden und an einem Regal abholen, und ein Buch per QR-Scan zurückgeben.",
+      "Ich habe die wichtigsten User Journeys kartiert. Für das MVP habe ich drei zentrale Szenarien ausgewählt: Onboarding und Abo, ein Buch finden und an einem „Regal“ abholen, und ein Buch per QR-Scan zurückgeben.",
     designProcess:
       "Ich bin von Low-Fidelity-Wireframes zu High-Fidelity-Screens gegangen. Parallel dazu habe ich ein Logo entworfen, Schriften und eine Farbpalette gewählt, den Tone of Voice festgelegt und ein einfaches Designsystem gebaut. Danach habe ich detaillierte, klickbare Prototypen zusammengestellt.",
     scope: {
@@ -306,7 +306,7 @@ const de: ProjectDictionary = {
     outcome:
       "Ein vollständiges MVP-Konzept, von der Recherche bis zu einem High-Fidelity-Prototyp für Investor:innen, allein in vier Tagen gebaut, mit einem Designsystem, das skaliert.",
     results: [
-      "MVP in 4 Tagen von der Idee bis zur entwicklungsreifen Übergabe gebracht",
+      "Das MVP in kurzer Zeit gebaut: von der Idee bis zur entwicklungsreifen Übergabe",
       "30 Personen befragt und 10 vergleichbare Apps analysiert, bevor ich zu gestalten begann",
       "Ein skalierbares Designsystem gebaut: Logo, Farbpalette, Typografie und Komponenten",
       "Recherche, Design und Prototyping allein end-to-end durchgeführt",
@@ -342,9 +342,9 @@ const uk: ProjectDictionary = {
     challenge:
       "Junior-дизайнери потрапляють у пастку: щоб влаштуватися на роботу, потрібен комерційний досвід, а щоб отримати досвід, потрібно спочатку влаштуватися. Курси дають теорію, а джуни не мають реального фідбеку, не розуміють обмежень і недооцінюють відповідальності справжнього проєкту, тому роботи з курсів рідко викликають довіру роботодавців.",
     approach:
-      "Перш ніж щось проєктувати, я опитала джуніорів, мід- і сеньйор-дизайнерів та HR-спеціалістів. Я очікувала, що сеньйори стануть менторами, але в них немає ні часу, ні мотивації делегувати джуніорам реальну роботу, часто через NDA. Справжньою аудиторією виявилися мідли: менторство дає їм практику на шляху до lead-ролі та дохід. Це відкриття змінило для мене всю логіку продукту: від «сеньйори делегують завдання» до «мідли менторять і ростуть». Далі: user flow, вайрфрейми, базова дизайн-система, high-fidelity клікабельний прототип і промо-лендинг. Я вибудувала все навколо одного ключового циклу: джуніор бере завдання, отримує фідбек від ментора, і я позначаю роботу як перевірену.",
+      "Перш ніж щось проєктувати, я опитала джуніорів, мід- і сеньйор-дизайнерів та HR-спеціалістів. Я очікувала, що сеньйори стануть менторами, але в них немає ні часу, ні мотивації делегувати джуніорам реальну роботу, часто через NDA. Справжньою аудиторією виявилися мідли: менторство дає їм практику на шляху до lead-ролі, а платні сесії на платформі приносять дохід. Це відкриття змінило для мене всю логіку продукту: від «сеньйори делегують завдання» до «мідли менторять і ростуть». Далі: user flow, вайрфрейми, базова дизайн-система, high-fidelity клікабельний прототип і промо-лендинг. Я вибудувала все навколо одного ключового циклу: джуніор бере завдання, отримує фідбек від ментора, і я позначаю роботу як перевірену.",
     outcome:
-      "Досліджена, підтверджена концепція MVP: персони користувачів, user flow, high-fidelity прототип і живий промо-лендинг. Проєкт, який я хочу побудувати й запустити.",
+      "Досліджена, підтверджена концепція MVP: персони користувачів, user flow, high-fidelity прототип і живий промо-лендинг. Проєкт, який я хочу побудувати і запустити.",
     results: [
       "Опитала 25 людей із 3 груп користувачів",
       "З'ясувала, що правильна аудиторія менторів: мідли",
@@ -382,7 +382,7 @@ const uk: ProjectDictionary = {
     research:
       "Я почала з аналізу ринку. Прямих конкурентів не було, тож я розібрала 10 подібних застосунків на сильні та слабкі сторони. Далі опитала 30 людей із цільової аудиторії через Google Forms. Результати підтвердили, що концепція цікава і життєздатна, і показали, чого користувачі очікують від такого застосунку.",
     userFlow:
-      "Я побудувала основні user journey. Для MVP обрала три ключові сценарії: знайомство і підписка, пошук книги та отримання її з шафи, а також повернення книги через сканування QR-коду.",
+      "Я побудувала основні user journey. Для MVP обрала три ключові сценарії: знайомство і підписка, пошук книги та отримання її з «шафи», а також повернення книги через сканування QR-коду.",
     designProcess:
       "Я пройшла шлях від low-fidelity вайрфреймів до high-fidelity екранів. Паралельно розробила логотип, обрала шрифти й кольорову палітру, визначила tone of voice і побудувала базову дизайн-систему. Після цього зібрала детальні клікабельні прототипи.",
     scope: {
@@ -411,7 +411,7 @@ const uk: ProjectDictionary = {
     outcome:
       "Повноцінна концепція MVP, від дослідження до high-fidelity прототипу для інвестора, зроблена самостійно за чотири дні, з дизайн-системою, яку можна масштабувати.",
     results: [
-      "Провела MVP від концепції до готової для розробки передачі за 4 дні",
+      "Створила MVP за короткий проміжок часу: від концепції до передачі в розробку",
       "Опитала 30 людей і проаналізувала 10 подібних застосунків перед проєктуванням",
       "Побудувала дизайн-систему, яку можна масштабувати: логотип, палітра, шрифти, компоненти",
       "Самостійно пройшла дослідження, дизайн і прототипування від початку до кінця",
