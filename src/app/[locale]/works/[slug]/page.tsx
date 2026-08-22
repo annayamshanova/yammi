@@ -265,11 +265,13 @@ export default async function ProjectPage({
               </p>
             </Reveal>
             <Reveal delay={0.05}>
-              <div className="relative aspect-[748/1532] w-full max-w-xs overflow-hidden border border-line">
+              <div className="relative mx-auto aspect-[732/1522] w-full max-w-xs overflow-hidden border border-line">
                 <video
                   src={meta.video.src}
                   poster={meta.video.poster}
-                  controls
+                  autoPlay
+                  muted
+                  loop
                   playsInline
                   className="h-full w-full object-cover"
                 />
