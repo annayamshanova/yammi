@@ -82,6 +82,7 @@ const uk: Dictionary = {
     outcomeLabel: "Результат",
     resultsLabel: "Результати",
     videoLabel: "Відео прототипу",
+    watchPrototype: "Переглянути клікабельний прототип",
     prevProject: "Попередній",
     nextProject: "Наступний",
     viewLive: "Відкрити посилання",

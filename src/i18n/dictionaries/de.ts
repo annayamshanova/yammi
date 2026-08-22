@@ -82,6 +82,7 @@ const de: Dictionary = {
     outcomeLabel: "Ergebnis",
     resultsLabel: "Ergebnisse",
     videoLabel: "Prototyp-Walkthrough",
+    watchPrototype: "Klickbaren Prototyp ansehen",
     prevProject: "Vorheriges",
     nextProject: "Nächstes",
     viewLive: "Live-Link öffnen",

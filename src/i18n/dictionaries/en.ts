@@ -52,6 +52,7 @@ const en: {
     outcomeLabel: string;
     resultsLabel: string;
     videoLabel: string;
+    watchPrototype: string;
     prevProject: string;
     nextProject: string;
     viewLive: string;
@@ -139,6 +140,7 @@ const en: {
     outcomeLabel: "Outcome",
     resultsLabel: "Results",
     videoLabel: "Prototype walkthrough",
+    watchPrototype: "Watch the clickable prototype",
     prevProject: "Previous",
     nextProject: "Next",
     viewLive: "Open live link",

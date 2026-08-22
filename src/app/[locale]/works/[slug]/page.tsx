@@ -15,6 +15,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { ProjectVisual } from "@/components/ProjectVisual";
 import { Reveal } from "@/components/Reveal";
 import { ScrollPlayVideo } from "@/components/ScrollPlayVideo";
+import { ClickToPlayVideo } from "@/components/ClickToPlayVideo";
 
 export function generateStaticParams() {
   return locales.flatMap((locale) =>
@@ -266,12 +267,30 @@ export default async function ProjectPage({
               </p>
             </Reveal>
             <Reveal delay={0.05}>
-              <div className="relative mx-auto aspect-[676/1402] w-full max-w-xs overflow-hidden rounded-[18px] border border-line">
-                <ScrollPlayVideo
-                  src={meta.video.src}
-                  poster={meta.video.poster}
-                  className="h-full w-full object-cover"
-                />
+              <div
+                className={`relative mx-auto w-full overflow-hidden ${
+                  meta.video.maxWidth ?? "max-w-xs"
+                }`}
+                style={{
+                  aspectRatio: meta.video.aspect.replace("/", " / "),
+                  borderRadius: `${meta.video.rounded}px`,
+                  boxShadow: "inset 0 0 0 1px var(--color-line)",
+                }}
+              >
+                {meta.video.mode === "click" ? (
+                  <ClickToPlayVideo
+                    src={meta.video.src}
+                    poster={meta.video.poster}
+                    label={dict.project.watchPrototype}
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <ScrollPlayVideo
+                    src={meta.video.src}
+                    poster={meta.video.poster}
+                    className="h-full w-full object-cover"
+                  />
+                )}
                 <div className="tech-grid pointer-events-none absolute inset-0" />
               </div>
             </Reveal>

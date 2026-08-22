@@ -18,7 +18,14 @@ type ProjectMeta = {
   coverImage?: string;
   coverFit?: "cover" | "contain";
   tools?: string;
-  video?: { src: string; poster: string };
+  video?: {
+    src: string;
+    poster: string;
+    mode?: "scroll" | "click";
+    aspect: string;
+    rounded: number;
+    maxWidth?: string;
+  };
 };
 
 export const projectMeta: Record<ProjectSlug, ProjectMeta> = {
@@ -39,6 +46,14 @@ export const projectMeta: Record<ProjectSlug, ProjectMeta> = {
     liveUrl: "https://buddy-landing.webflow.io/",
     coverImage: "/works/buddy-cover.png",
     tools: "Figma, Webflow",
+    video: {
+      src: "/works/buddy-video/prototype-walkthrough.mp4",
+      poster: "/works/buddy-video/video-poster.jpg",
+      mode: "click",
+      aspect: "1280/784",
+      rounded: 12,
+      maxWidth: "max-w-2xl",
+    },
   },
   autocore: {
     slug: "autocore",
@@ -59,6 +74,9 @@ export const projectMeta: Record<ProjectSlug, ProjectMeta> = {
     video: {
       src: "/works/shelfy/prototype-walkthrough.mp4",
       poster: "/works/shelfy/video-poster.jpg",
+      aspect: "676/1402",
+      rounded: 20,
+      maxWidth: "max-w-xs",
     },
   },
 };
@@ -93,13 +111,13 @@ const en: ProjectDictionary = {
     industry: "Mental Health",
     role: "Brand Identity, UX/UI Design, Vibecoding",
     tagline:
-      "A landing page for psychologist and art therapist Ramina, designed and built solo through vibecoding.",
+      "A landing page for psychologist and art therapist Ramina, designed and built through vibecoding.",
     overview:
       "Ramina Kolbaya created Yastobo.You as a safe space for Ukrainians in Germany. I designed it in my own UI system and built it end to end with AI-assisted development, then released it in August 2026.",
     challenge:
       "Ramina needed a calling card that would show her personality, introduce her and her services, and lower the fear of reaching out to a psychologist.",
     approach:
-      "I designed the site in Figma, then used vibecoding with Claude Code to go from design straight to a live, working site. I deployed it on Vercel, with the code on GitHub.",
+      "I designed the site in Figma, then used vibecoding with Claude Code to go from design to a working site. I deployed it on Vercel, with the code on GitHub.",
     outcome:
       "In a short time I built a full brand identity: a logo, copywriting, and a three-language site adapted to every device, all with AI-assisted development.",
   },
@@ -108,13 +126,13 @@ const en: ProjectDictionary = {
     industry: "EdTech",
     role: "UX Research, UX/UI Design, Prototyping",
     tagline:
-      "A free mentoring platform connecting junior UX/UI designers with mid-level mentors through real design tasks. A personal MVP I'd love to launch.",
+      "A free mentoring platform connecting junior designers with mentors through real design tasks. A personal MVP I'd love to launch.",
     overview:
-      "Buddy is a free mentoring platform that pairs junior UX/UI designers with mentors who share real design challenges from their own work, so juniors build a portfolio that looks credible to employers. This was my final project at IT Career Hub. I built it solo, from research through UX design to a clickable prototype and a promo landing page.",
+      "The free Buddy platform connects junior designers with mentors who share real design challenges from their own work. Through the service, juniors build a portfolio that earns employers' trust, while mid-level specialists try themselves out as mentors. This was my final project at IT Career Hub. I went through the whole process solo: from research through UX design to a clickable prototype and a promo landing page.",
     challenge:
       "Junior designers face a catch-22: you need commercial experience to get hired, but you need to get hired to gain that experience. Courses teach theory. They skip the real feedback, constraints, and accountability of an actual project, so portfolio pieces made in class rarely earn an employer's trust.",
     approach:
-      "Before designing anything, I interviewed and surveyed 25 people across three groups: juniors, mid-to-senior designers, and HR specialists. The research overturned my starting assumption. I'd expected senior designers to be the natural mentors, but seniors don't have the time or motivation to delegate real, often NDA-bound work to juniors. Mid-level designers turned out to be the real audience: mentoring gives them leadership practice on the way to a lead role, plus an optional income stream from paid sessions. That finding changed the whole product, from 'seniors delegate tasks' to 'mids mentor and grow'. From there I mapped user flows for both personas, built wireframes, a basic design system, a high-fidelity clickable prototype, and a promo landing page. I scoped it around one core loop: a junior takes a task, gets mentor feedback, and I mark the work verified.",
+      "Before designing anything, I interviewed juniors, mid-to-senior designers, and HR specialists. I expected seniors to become mentors, but they don't have the time or motivation to delegate real work to juniors, often because of NDAs. The real audience turned out to be mid-level designers: mentoring gives them practice on the way to a lead role, plus income. That finding changed the whole product logic for me, from 'seniors delegate tasks' to 'mids mentor and grow'. From there: user flows, wireframes, a basic design system, a high-fidelity clickable prototype, and a promo landing page. I built it all around one core loop: a junior takes a task, gets mentor feedback, and I mark the work verified.",
     outcome:
       "A researched, validated MVP concept: user personas, flows, a high-fidelity prototype, and a live promo landing page. A project I want to build and launch.",
     results: [
@@ -129,11 +147,11 @@ const en: ProjectDictionary = {
     industry: "Automotive",
     role: "UX/UI Design, Content, Framer Development",
     tagline:
-      "A full rebuild for a Kyiv car-buyback service, redesigned in Figma and shipped in Framer for speed and trust.",
+      "A full rebuild for a Ukrainian car buyback and sourcing service, designed and built in Framer.",
     overview:
-      "AutoCore buys used cars directly from owners across Kyiv. The brand had an old site that no longer matched its business. I rewrote the content from scratch, added the new services, and rebuilt the site in Figma and Framer.",
+      "AutoCore buys back and sources cars for clients across Ukraine. The brand had an old site that no longer matched its business, so we rewrote the content from scratch and added new services. We chose Framer so the client could make small content updates themselves going forward.",
     challenge:
-      "The client needed a fast turnaround and a site that converts. Owners selling a car want to trust the buyer within seconds, and the old site didn't do that job or show the services AutoCore had grown into.",
+      "The client needed a fast launch and a site that converts. For most Ukrainians, selling a car can feel like a complicated, high-stakes process, so it mattered to show transparency at every step. AutoCore had to earn trust, and the old site didn't clear that bar.",
     approach:
       "I rewrote all the copy, structured the new service lineup: buyback, commission sales, and vehicle sourcing. I designed the site in Figma, then built it in Framer to move from design to launch fast.",
     outcome:
@@ -198,13 +216,13 @@ const de: ProjectDictionary = {
     industry: "Mental Health",
     role: "Markenidentität, UX/UI Design, Vibecoding",
     tagline:
-      "Eine Landingpage für die Psychologin und Kunsttherapeutin Ramina, allein per Vibecoding designt und gebaut.",
+      "Eine Landingpage für die Psychologin und Kunsttherapeutin Ramina, gestaltet und gebaut per Vibecoding.",
     overview:
       "Ramina Kolbaya hat Yastobo.You als sicheren Raum für Ukrainer:innen in Deutschland geschaffen. Ich habe die Seite im eigenen UI-System gestaltet, komplett mit KI-gestützter Entwicklung gebaut und im August 2026 veröffentlicht.",
     challenge:
       "Ramina brauchte eine Visitenkarte, die ihre Persönlichkeit zeigt, sie und ihre Leistungen vorstellt und die Hemmschwelle senkt, sich an eine Psychologin zu wenden.",
     approach:
-      "Ich habe die Seite in Figma gestaltet und dann per Vibecoding mit Claude Code direkt vom Design zur lebenden, funktionierenden Seite gebracht. Ich habe sie auf Vercel deployed, mit dem Code auf GitHub.",
+      "Ich habe die Seite in Figma gestaltet und dann per Vibecoding mit Claude Code den Weg vom Design zur funktionierenden Seite zurückgelegt. Ich habe sie auf Vercel deployed, mit dem Code auf GitHub.",
     outcome:
       "In kurzer Zeit habe ich so ein vollständiges Markendesign gebaut: Logo, Copywriting und eine dreisprachige Seite, angepasst an alle Geräte, alles mit KI-gestützter Entwicklung.",
   },
@@ -213,13 +231,13 @@ const de: ProjectDictionary = {
     industry: "EdTech",
     role: "UX Research, UX/UI Design, Prototyping",
     tagline:
-      "Eine kostenlose Mentoring-Plattform, die Junior-UX/UI-Designer:innen mit Mid-Level-Mentor:innen über echte Design-Aufgaben verbindet. Ein persönliches MVP, das ich gerne launchen würde.",
+      "Eine kostenlose Mentoring-Plattform, die Junior-Designer:innen mit Mentor:innen über echte Design-Aufgaben verbindet. Ein persönliches MVP, das ich gerne launchen würde.",
     overview:
-      "Buddy ist eine kostenlose Mentoring-Plattform, die Junior-UX/UI-Designer:innen mit Mentor:innen zusammenbringt, die echte Design-Herausforderungen aus ihrer eigenen Arbeit teilen, damit Juniors ein Portfolio aufbauen, das bei Arbeitgeber:innen glaubwürdig wirkt. Das war mein Abschlussprojekt am IT Career Hub. Ich habe es allein umgesetzt, von der Recherche über UX-Design bis zum klickbaren Prototyp und einer Promo-Landingpage.",
+      "Die kostenlose Plattform Buddy verbindet Junior-Designer:innen mit Mentor:innen, die echte Design-Herausforderungen aus ihrer eigenen Arbeit teilen. Über den Service bauen Juniors ein Portfolio auf, das bei Arbeitgeber:innen Vertrauen schafft, während Mid-Level-Spezialist:innen sich als Mentor:innen ausprobieren. Das war mein Abschlussprojekt am IT Career Hub. Ich habe den gesamten Weg allein zurückgelegt: von der Recherche über UX-Design bis zum klickbaren Prototyp und einer Promo-Landingpage.",
     challenge:
       "Junior-Designer:innen stecken in einer Zwickmühle: Um eingestellt zu werden, braucht man kommerzielle Erfahrung, aber um die zu bekommen, muss man erst eingestellt werden. Kurse vermitteln Theorie. Sie übergehen das echte Feedback, die Constraints und die Verantwortung eines echten Projekts, deshalb gewinnen Portfolio-Arbeiten aus dem Unterricht selten das Vertrauen von Arbeitgeber:innen.",
     approach:
-      "Bevor ich etwas gestaltet habe, befragte ich 25 Personen aus drei Gruppen: Juniors, Mid- bis Senior-Designer:innen und HR-Spezialist:innen. Die Recherche widerlegte meine Ausgangsannahme. Ich hatte erwartet, dass Senior-Designer:innen die natürlichen Mentor:innen wären, aber Seniors haben weder die Zeit noch die Motivation, echte, oft NDA-geschützte Arbeit an Juniors zu delegieren. Mid-Level-Designer:innen erwiesen sich als die eigentliche Zielgruppe: Mentoring gibt ihnen Führungspraxis auf dem Weg zur Lead-Rolle, plus optional ein Einkommen durch bezahlte Sessions. Dieser Befund veränderte für mich die gesamte Produktlogik, von 'Seniors delegieren Aufgaben' zu 'Mids mentoren und wachsen'. Danach erstellte ich User Flows für beide Personas, Wireframes, ein einfaches Designsystem, einen High-Fidelity-Klickprototyp und eine Promo-Landingpage. Ich habe alles um einen Kernloop gebaut: Ein Junior übernimmt eine Aufgabe, bekommt Feedback vom Mentor, und ich markiere die Arbeit als verifiziert.",
+      "Bevor ich etwas gestaltet habe, habe ich Juniors, Mid- bis Senior-Designer:innen und HR-Spezialist:innen befragt. Ich hatte erwartet, dass Seniors zu Mentor:innen werden, aber sie haben weder die Zeit noch die Motivation, echte Arbeit an Juniors zu delegieren, oft wegen NDAs. Die eigentliche Zielgruppe waren Mid-Level-Designer:innen: Mentoring gibt ihnen Praxis auf dem Weg zur Lead-Rolle, plus Einkommen. Dieser Befund hat für mich die gesamte Produktlogik verändert, von 'Seniors delegieren Aufgaben' zu 'Mids mentoren und wachsen'. Danach: User Flows, Wireframes, ein einfaches Designsystem, ein High-Fidelity-Klickprototyp und eine Promo-Landingpage. Ich habe alles um einen Kernloop gebaut: Ein Junior übernimmt eine Aufgabe, bekommt Feedback vom Mentor, und ich markiere die Arbeit als verifiziert.",
     outcome:
       "Ein recherchiertes, validiertes MVP-Konzept: User Personas, Flows, ein High-Fidelity-Prototyp und eine live Promo-Landingpage. Ein Projekt, das ich bauen und launchen möchte.",
     results: [
@@ -234,11 +252,11 @@ const de: ProjectDictionary = {
     industry: "Automotive",
     role: "UX/UI Design, Content, Framer-Entwicklung",
     tagline:
-      "Ein kompletter Relaunch für einen Kiewer Autoankauf-Service, in Figma gestaltet und in Framer umgesetzt, für Tempo und Vertrauen.",
+      "Ein kompletter Relaunch für einen ukrainischen Autoankauf- und Vermittlungsservice, gestaltet und gebaut in Framer.",
     overview:
-      "AutoCore kauft Gebrauchtwagen direkt von Besitzer:innen in Kiew. Die Marke hatte eine alte Website, die nicht mehr zum Geschäft passte. Ich habe die Inhalte komplett neu geschrieben, die neuen Leistungen ergänzt und die Seite in Figma und Framer neu gebaut.",
+      "AutoCore kauft und vermittelt Autos für Kund:innen in der ganzen Ukraine. Die Marke hatte eine alte Website, die nicht mehr zum Geschäft passte, also haben wir die Inhalte komplett neu geschrieben und neue Leistungen ergänzt. Wir haben uns für Framer entschieden, damit der Kunde künftig selbst kleine Inhalte anpassen kann.",
     challenge:
-      "Der Kunde brauchte eine schnelle Umsetzung und eine Seite, die konvertiert. Wer ein Auto verkauft, will dem Käufer innerhalb von Sekunden vertrauen. Die alte Seite hat das nicht geleistet und die neuen Leistungen von AutoCore nicht gezeigt.",
+      "Der Kunde brauchte einen schnellen Launch und eine Seite, die konvertiert. Für die meisten Ukrainer:innen kann der Autoverkauf ein komplizierter, verantwortungsvoller Prozess wirken, deshalb war es wichtig, die Transparenz jedes Schritts zu zeigen. AutoCore musste Vertrauen aufbauen, und die alte Seite hat das nicht geleistet.",
     approach:
       "Ich habe alle Texte neu geschrieben und das neue Leistungsangebot strukturiert: Ankauf, Kommissionsverkauf und Fahrzeugsuche. Ich habe die Seite in Figma gestaltet und dann in Framer gebaut, um schnell vom Design zum Launch zu kommen.",
     outcome:
@@ -303,13 +321,13 @@ const uk: ProjectDictionary = {
     industry: "Mental Health",
     role: "Брендинг, UX/UI дизайн, вайбкодинг",
     tagline:
-      "Лендинг для психологині та арт-терапевтки Раміни, спроєктований і зібраний самостійно через вайбкодинг.",
+      "Лендинг для психологині та арт-терапевтки Раміни, спроєктований і зібраний через вайбкодинг.",
     overview:
       "Раміна Колбая створила Yastobo.You як безпечний простір для українців у Німеччині. Я спроєктувала сайт у власній UI-системі, повністю зібрала його за допомогою AI-розробки і випустила в серпні 2026.",
     challenge:
       "Раміні потрібна була візитівка, яка передасть її особистість, познайомить із нею та її послугами і знизить страх звернутися до психолога.",
     approach:
-      "Я спроєктувала сайт у Figma, а потім через вайбкодинг із Claude Code пройшла шлях від дизайну одразу до живого робочого сайту. Задеплоїла його на Vercel, з кодом на GitHub.",
+      "Я спроєктувала сайт у Figma, а потім через вайбкодинг із Claude Code пройшла шлях від дизайну до робочого сайту. Задеплоїла його на Vercel, з кодом на GitHub.",
     outcome:
       "За короткий термін я зібрала повноцінний фірмовий стиль: логотип, копірайтинг і сайт трьома мовами з адаптацією під усі пристрої, і все це за участю ШІ-розробки.",
   },
@@ -318,13 +336,13 @@ const uk: ProjectDictionary = {
     industry: "EdTech",
     role: "UX-дослідження, UX/UI дизайн, прототипування",
     tagline:
-      "Безкоштовна менторська платформа, що з'єднує junior UX/UI-дизайнерів із mid-level менторами через реальні дизайн-завдання. Особистий MVP, який я хочу колись запустити.",
+      "Безкоштовна менторська платформа, що з'єднує junior дизайнерів із менторами через реальні дизайн-завдання. Особистий MVP, який я хочу колись запустити.",
     overview:
-      "Безкоштовна менторська платформа Buddy з'єднує junior UX/UI-дизайнерів із менторами, які діляться реальними дизайн-челенджами зі свого досвіду, щоб джуни збирали портфоліо, яке викликає довіру у роботодавців. Це був мій дипломний проєкт в IT Career Hub. Я пройшла весь шлях самостійно: від дослідження через UX-дизайн до клікабельного прототипу та промо-лендингу.",
+      "Безкоштовна платформа Buddy з'єднує junior дизайнерів із менторами, які діляться реальними дизайн-челенджами зі свого досвіду. Завдяки сервісу джуни збирають портфоліо, яке викликає довіру у роботодавців, а мідл спеціалісти пробують себе в ролі менторів. Це був мій дипломний проєкт в IT Career Hub. Я пройшла весь шлях самостійно: від дослідження через UX-дизайн до клікабельного прототипу та промо-лендингу.",
     challenge:
       "Junior-дизайнери потрапляють у пастку: щоб влаштуватися на роботу, потрібен комерційний досвід, а щоб отримати досвід, потрібно спочатку влаштуватися. Курси дають теорію. Вони пропускають реальний фідбек, обмеження і відповідальність справжнього проєкту, тому портфоліо-роботи з курсів рідко викликають довіру роботодавців.",
     approach:
-      "Перш ніж щось проєктувати, я опитала 25 людей із трьох груп: джуніорів, мід- і сеньйор-дизайнерів та HR-спеціалістів. Дослідження спростувало мою початкову гіпотезу. Я очікувала, що сеньйори стануть природними менторами, але в них немає ні часу, ні мотивації делегувати джуніорам реальну, часто захищену NDA, роботу. Справжньою аудиторією виявилися мідли: менторство дає їм практику лідерства на шляху до lead-ролі, плюс опційний дохід від платних сесій. Це відкриття змінило для мене всю логіку продукту: від «сеньйори делегують завдання» до «мідли менторять і ростуть». Далі я побудувала user flow для обох персон, вайрфрейми, базову дизайн-систему, high-fidelity клікабельний прототип і промо-лендинг. Я вибудувала все навколо одного ключового циклу: джуніор бере завдання, отримує фідбек від ментора, і я позначаю роботу як перевірену.",
+      "Перш ніж щось проєктувати, я опитала джуніорів, мід- і сеньйор-дизайнерів та HR-спеціалістів. Я очікувала, що сеньйори стануть менторами, але в них немає ні часу, ні мотивації делегувати джуніорам реальну роботу, часто через NDA. Справжньою аудиторією виявилися мідли: менторство дає їм практику на шляху до lead-ролі та дохід. Це відкриття змінило для мене всю логіку продукту: від «сеньйори делегують завдання» до «мідли менторять і ростуть». Далі: user flow, вайрфрейми, базова дизайн-система, high-fidelity клікабельний прототип і промо-лендинг. Я вибудувала все навколо одного ключового циклу: джуніор бере завдання, отримує фідбек від ментора, і я позначаю роботу як перевірену.",
     outcome:
       "Досліджена, підтверджена концепція MVP: персони користувачів, user flow, high-fidelity прототип і живий промо-лендинг. Проєкт, який я хочу побудувати й запустити.",
     results: [
@@ -339,11 +357,11 @@ const uk: ProjectDictionary = {
     industry: "Automotive",
     role: "UX/UI дизайн, контент, розробка на Framer",
     tagline:
-      "Повний ребілд сайту для київського сервісу викупу авто, спроєктований у Figma і зібраний на Framer заради швидкості та довіри.",
+      "Повний ребілд сайту для українського сервісу викупу та підбору авто, спроєктований і зібраний на Framer.",
     overview:
-      "AutoCore викуповує вживані авто напряму у власників по Києву. У бренду був старий сайт, який більше не відповідав бізнесу. Я переписала весь контент з нуля, додала нові послуги і перезібрала сайт у Figma та Framer.",
+      "AutoCore - сервіс з викупу та підбору авто по всій Україні. У бренду був старий сайт, який більше не відповідав бізнесу. Тому було вирішено переписати весь контент з нуля і додати нові послуги. Ми вибрали платформу Framer, щоб згодом замовник міг самостійно вносити невеликі зміни у контенті.",
     challenge:
-      "Клієнту потрібен був швидкий запуск і сайт з високою конверсією. Власник авто на продаж хоче довіритися покупцю за секунди, а старий сайт не справлявся з цим і не показував нові послуги AutoCore.",
+      "Клієнту потрібен був швидкий запуск і сайт з високою конверсією. Для більшості українців продаж авто може здаватися складним і відповідальним процесом, тому важливо було показати прозорість кожного кроку. AutoCore мав викликати довіру, а старий сайт не відповідав цьому критерію.",
     approach:
       "Я переписала весь текст і структурувала нову лінійку послуг: викуп, комісійний продаж і підбір авто. Спроєктувала сайт у Figma, а потім зібрала його на Framer, щоб швидко пройти шлях від дизайну до запуску.",
     outcome:
