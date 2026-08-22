@@ -18,6 +18,7 @@ type ProjectMeta = {
   coverImage?: string;
   coverFit?: "cover" | "contain";
   tools?: string;
+  video?: { src: string; poster: string };
 };
 
 export const projectMeta: Record<ProjectSlug, ProjectMeta> = {
@@ -56,6 +57,10 @@ export const projectMeta: Record<ProjectSlug, ProjectMeta> = {
       "https://www.figma.com/design/1VAH3wZLfASsfLSUDVyU8r/MVP-Shelfy?node-id=0-1",
     coverImage: "/works/shelfy-cover.png",
     tools: "Figma",
+    video: {
+      src: "/works/shelfy/prototype-walkthrough.mp4",
+      poster: "/works/shelfy/video-poster.jpg",
+    },
   },
 };
 
@@ -67,6 +72,15 @@ type ProjectCopy = {
   overview: string;
   challenge: string;
   approach: string;
+  research?: string;
+  userFlow?: string;
+  designProcess?: string;
+  scope?: {
+    inMvp: string[];
+    notInMvp: string[];
+    future: string[];
+    note: string;
+  };
   outcome: string;
   results?: string[];
 };
@@ -136,7 +150,36 @@ const en: ProjectDictionary = {
     challenge:
       "I set myself a tight four-day clock to take a project from idea to an investor-ready prototype, research included. Physical books are having a moment again, especially with Gen Z stepping back from their phones toward analog hobbies, and I wanted a concept that also leaned into reuse and sustainability.",
     approach:
-      "I ran a market analysis: no direct competitors, only adjacent services, so I studied 10 comparable apps for what worked and what didn't. I surveyed 30 people from the target audience, which confirmed the concept and showed what they expected from an app like this. From there I mapped three core user flows, moved from low-fidelity wireframes to high-fidelity screens, and designed a logo, color palette, fonts, tone of voice, and a basic design system before building clickable prototypes. I scoped the MVP to one loop: subscribe, find a book, pick it up or buy it, and left recommendations, social features, and condition scoring for later.",
+      "I worked in three stages: research, user flow, and design, moving from a blank page to a clickable, investor-ready prototype.",
+    research:
+      "I started with a market analysis. There were no direct competitors, only adjacent services, so I studied 10 comparable apps for their strengths and weaknesses. Then I surveyed 30 people from the target audience through Google Forms. The results confirmed the concept was interesting and viable, and shaped what people expect from an app like this.",
+    userFlow:
+      "Next I mapped the main user journeys. For the MVP I picked three key scenarios that cover the most important interactions: browsing and subscribing, finding a book and picking it up from a shelf, and returning a book by scanning its QR code.",
+    designProcess:
+      "I moved from low-fidelity wireframes to high-fidelity screens, stage by stage. Along the way I designed a logo, chose fonts and a color palette, defined the tone of voice, and built a basic design system. From there I built highly detailed, clickable prototypes.",
+    scope: {
+      inMvp: [
+        "Core subscription flow",
+        "Book discovery and availability",
+        "Pick up and return",
+        "QR-based actions",
+        "Basic account and access logic",
+      ],
+      notInMvp: [
+        "Smart recommendations",
+        "Community and social features",
+        "Automated condition validation",
+        "Advanced analytics",
+        "Custom pricing tiers",
+      ],
+      future: [
+        "AI-assisted book condition scoring",
+        "Reader profiles and history",
+        "Partner expansion",
+        "Dynamic subscriptions",
+      ],
+      note: "I cut every non-essential detail and saved it for later. This version holds only the core concept.",
+    },
     outcome:
       "A complete MVP concept, from research to a high-fidelity, investor-ready prototype, built solo in four days with a design system that can scale.",
     results: [
@@ -211,7 +254,36 @@ const de: ProjectDictionary = {
     challenge:
       "Ich habe mir selbst vier Tage gesetzt, um ein Projekt von der Idee zu einem investor-reifen Prototyp zu bringen, inklusive Recherche. Physische Bücher erleben gerade ein Comeback, besonders bei der Gen Z, die sich von ihren Handys abwendet und zu analogen Hobbys zurückkehrt, und ich wollte ein Konzept, das auch auf Wiederverwendung und Nachhaltigkeit setzt.",
     approach:
-      "Ich habe eine Marktanalyse gemacht: keine direkten Konkurrenten, nur verwandte Services, also habe ich 10 vergleichbare Apps auf Stärken und Schwächen untersucht. Ich habe 30 Personen aus der Zielgruppe befragt, was das Konzept bestätigte und zeigte, was sie von so einer App erwarten. Danach habe ich drei zentrale User Flows kartiert, bin von Low-Fidelity- zu High-Fidelity-Screens gegangen und habe ein Logo, eine Farbpalette, Schriften, einen Tone of Voice und ein einfaches Designsystem entworfen, bevor ich klickbare Prototypen gebaut habe. Ich habe das MVP auf einen Loop reduziert: abonnieren, ein Buch finden, abholen oder kaufen, und Empfehlungen, Social Features und Zustandsprüfung für später zurückgestellt.",
+      "Ich habe in drei Etappen gearbeitet: Recherche, User Flow und Design, von einem leeren Blatt bis zu einem klickbaren, investor-reifen Prototyp.",
+    research:
+      "Ich habe mit einer Marktanalyse angefangen. Es gab keine direkten Konkurrenten, nur verwandte Services, also habe ich 10 vergleichbare Apps auf Stärken und Schwächen untersucht. Danach habe ich 30 Personen aus der Zielgruppe über Google Forms befragt. Die Ergebnisse bestätigten, dass das Konzept interessant und tragfähig ist, und zeigten, was Nutzer:innen von so einer App erwarten.",
+    userFlow:
+      "Als Nächstes habe ich die wichtigsten User Journeys kartiert. Für das MVP habe ich drei zentrale Szenarien ausgewählt, die die wichtigsten Interaktionen abdecken: stöbern und abonnieren, ein Buch finden und an einem Regal abholen, und ein Buch per QR-Scan zurückgeben.",
+    designProcess:
+      "Ich bin Schritt für Schritt von Low-Fidelity-Wireframes zu High-Fidelity-Screens gegangen. Dabei habe ich ein Logo entworfen, Schriften und eine Farbpalette gewählt, den Tone of Voice festgelegt und ein einfaches Designsystem gebaut. Danach habe ich sehr detaillierte, klickbare Prototypen gebaut.",
+    scope: {
+      inMvp: [
+        "Kern-Abo-Flow",
+        "Buchsuche und Verfügbarkeit",
+        "Abholen und Zurückgeben",
+        "QR-basierte Aktionen",
+        "Einfache Konto- und Zugangslogik",
+      ],
+      notInMvp: [
+        "Smarte Empfehlungen",
+        "Community- und Social-Features",
+        "Automatisierte Zustandsprüfung",
+        "Erweiterte Analytics",
+        "Individuelle Preisstufen",
+      ],
+      future: [
+        "KI-gestützte Zustandsbewertung von Büchern",
+        "Leser:innen-Profile und Historie",
+        "Partner-Expansion",
+        "Dynamische Abos",
+      ],
+      note: "Ich habe jedes nicht essenzielle Detail gestrichen und für später aufgehoben. Diese Version enthält nur das Kernkonzept.",
+    },
     outcome:
       "Ein vollständiges MVP-Konzept, von der Recherche bis zu einem High-Fidelity-Prototyp für Investor:innen, allein in vier Tagen gebaut, mit einem Designsystem, das skaliert.",
     results: [
@@ -286,7 +358,36 @@ const uk: ProjectDictionary = {
     challenge:
       "Я поставила собі чотири дні, щоб пройти шлях від ідеї до прототипу, готового для інвестора, включно з дослідженням. Фізичні книги переживають новий сплеск популярності, особливо серед Gen Z, яка відходить від телефонів до аналогових хобі, і я хотіла концепцію, що спирається ще й на повторне використання та стійкість.",
     approach:
-      "Я провела аналіз ринку: прямих конкурентів немає, лише суміжні сервіси, тож я розібрала 10 подібних застосунків на сильні та слабкі сторони. Опитала 30 людей із цільової аудиторії, що підтвердило концепцію і показало, чого вони очікують від такого застосунку. Далі я побудувала три ключові user flow, пройшла шлях від low-fidelity до high-fidelity екранів і розробила логотип, кольорову палітру, шрифти, tone of voice та базову дизайн-систему, перш ніж зібрати клікабельні прототипи. Я звела MVP до одного циклу: підписатися, знайти книгу, забрати або купити, а рекомендації, соціальні функції та перевірку стану відклала на потім.",
+      "Я працювала в три етапи: дослідження, user flow і дизайн, від чистого аркуша до клікабельного прототипу, готового для інвестора.",
+    research:
+      "Я почала з аналізу ринку. Прямих конкурентів не було, лише суміжні сервіси, тож я розібрала 10 подібних застосунків на сильні та слабкі сторони. Далі опитала 30 людей із цільової аудиторії через Google Forms. Результати підтвердили, що концепція цікава і життєздатна, і показали, чого користувачі очікують від такого застосунку.",
+    userFlow:
+      "Далі я побудувала основні user journey. Для MVP я обрала три ключові сценарії, що охоплюють найважливіші взаємодії: перегляд і підписку, пошук книги та отримання її з шафи, і повернення книги через сканування QR-коду.",
+    designProcess:
+      "Я пройшла шлях від low-fidelity вайрфреймів до high-fidelity екранів крок за кроком. Паралельно розробила логотип, обрала шрифти й кольорову палітру, визначила tone of voice і побудувала базову дизайн-систему. Після цього зібрала дуже детальні клікабельні прототипи.",
+    scope: {
+      inMvp: [
+        "Основний флоу підписки",
+        "Пошук і доступність книг",
+        "Отримання та повернення",
+        "Дії через QR-код",
+        "Базова логіка акаунту й доступу",
+      ],
+      notInMvp: [
+        "Розумні рекомендації",
+        "Соціальні функції та ком'юніті",
+        "Автоматична перевірка стану книги",
+        "Розширена аналітика",
+        "Кастомні тарифи",
+      ],
+      future: [
+        "ШІ-оцінка стану книги",
+        "Профілі та історія читачів",
+        "Розширення мережі партнерів",
+        "Динамічні підписки",
+      ],
+      note: "Я прибрала всі неважливі деталі і відклала їх на потім. Ця версія містить лише основну концепцію.",
+    },
     outcome:
       "Повноцінна концепція MVP, від дослідження до high-fidelity прототипу для інвестора, зроблена самостійно за чотири дні, з дизайн-системою, яку можна масштабувати.",
     results: [

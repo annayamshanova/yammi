@@ -54,8 +54,36 @@ export default async function ProjectPage({
   const sections = [
     { label: dict.project.challengeLabel, text: copy.challenge },
     { label: dict.project.approachLabel, text: copy.approach },
-    { label: dict.project.outcomeLabel, text: copy.outcome },
+    ...(copy.research
+      ? [{ label: dict.project.researchLabel, text: copy.research }]
+      : []),
+    ...(copy.userFlow
+      ? [{ label: dict.project.userFlowLabel, text: copy.userFlow }]
+      : []),
+    ...(copy.designProcess
+      ? [{ label: dict.project.designLabel, text: copy.designProcess }]
+      : []),
   ];
+
+  const scopeColumns = copy.scope
+    ? [
+        {
+          label: dict.project.scopeInLabel,
+          items: copy.scope.inMvp,
+          marker: "bg-accent",
+        },
+        {
+          label: dict.project.scopeOutLabel,
+          items: copy.scope.notInMvp,
+          marker: "border border-ink-soft",
+        },
+        {
+          label: dict.project.scopeFutureLabel,
+          items: copy.scope.future,
+          marker: "border border-line-soft",
+        },
+      ]
+    : [];
 
   return (
     <div className="flex min-h-dvh flex-col">
@@ -159,6 +187,53 @@ export default async function ProjectPage({
           </div>
         ))}
 
+        {copy.scope && (
+          <div className="mt-10 border-t border-line pt-10">
+            <Reveal>
+              <div className="grid gap-8 sm:grid-cols-3">
+                {scopeColumns.map((column) => (
+                  <div key={column.label}>
+                    <p className="font-mono text-xs tracking-widest text-ink-soft">
+                      {column.label.toUpperCase()}
+                    </p>
+                    <ul className="mt-4 space-y-2.5">
+                      {column.items.map((item) => (
+                        <li
+                          key={item}
+                          className="flex gap-2.5 text-sm leading-relaxed text-ink-soft"
+                        >
+                          <span
+                            className={`mt-[5px] h-2 w-2 shrink-0 ${column.marker}`}
+                          />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+            <Reveal delay={0.05}>
+              <p className="mt-8 max-w-2xl font-mono text-xs italic text-ink-soft">
+                {copy.scope.note}
+              </p>
+            </Reveal>
+          </div>
+        )}
+
+        <div className="mt-10 grid gap-4 border-t border-line pt-10 sm:grid-cols-[160px_1fr] sm:gap-12">
+          <Reveal>
+            <p className="font-mono text-xs tracking-widest text-ink-soft">
+              {dict.project.outcomeLabel.toUpperCase()}
+            </p>
+          </Reveal>
+          <Reveal delay={0.05}>
+            <p className="max-w-2xl leading-relaxed text-ink-soft">
+              {copy.outcome}
+            </p>
+          </Reveal>
+        </div>
+
         {copy.results && (
           <div className="mt-10 grid gap-4 border-t border-line pt-10 sm:grid-cols-[160px_1fr] sm:gap-12">
             <Reveal>
@@ -178,6 +253,28 @@ export default async function ProjectPage({
                   </li>
                 ))}
               </ul>
+            </Reveal>
+          </div>
+        )}
+
+        {meta.video && (
+          <div className="mt-10 grid gap-8 border-t border-line pt-10 sm:grid-cols-[160px_1fr] sm:gap-12">
+            <Reveal>
+              <p className="font-mono text-xs tracking-widest text-ink-soft">
+                {dict.project.videoLabel.toUpperCase()}
+              </p>
+            </Reveal>
+            <Reveal delay={0.05}>
+              <div className="relative aspect-[748/1532] w-full max-w-xs overflow-hidden border border-line">
+                <video
+                  src={meta.video.src}
+                  poster={meta.video.poster}
+                  controls
+                  playsInline
+                  className="h-full w-full object-cover"
+                />
+                <div className="tech-grid pointer-events-none absolute inset-0" />
+              </div>
             </Reveal>
           </div>
         )}

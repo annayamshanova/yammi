@@ -43,8 +43,15 @@ const en: {
     toolsLabel: string;
     challengeLabel: string;
     approachLabel: string;
+    researchLabel: string;
+    userFlowLabel: string;
+    designLabel: string;
+    scopeInLabel: string;
+    scopeOutLabel: string;
+    scopeFutureLabel: string;
     outcomeLabel: string;
     resultsLabel: string;
+    videoLabel: string;
     prevProject: string;
     nextProject: string;
     viewLive: string;
@@ -123,8 +130,15 @@ const en: {
     toolsLabel: "Tools",
     challengeLabel: "Challenge",
     approachLabel: "Approach",
+    researchLabel: "Research",
+    userFlowLabel: "User flow",
+    designLabel: "Design",
+    scopeInLabel: "In the MVP",
+    scopeOutLabel: "Not in the MVP",
+    scopeFutureLabel: "Future ideas",
     outcomeLabel: "Outcome",
     resultsLabel: "Results",
+    videoLabel: "Prototype walkthrough",
     prevProject: "Previous",
     nextProject: "Next",
     viewLive: "Open live link",
