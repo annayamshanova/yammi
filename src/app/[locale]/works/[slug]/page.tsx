@@ -266,7 +266,7 @@ export default async function ProjectPage({
               </p>
             </Reveal>
             <Reveal delay={0.05}>
-              <div className="relative mx-auto aspect-[676/1402] w-full max-w-xs overflow-hidden border border-line">
+              <div className="relative mx-auto aspect-[676/1402] w-full max-w-xs overflow-hidden rounded-[15px] border border-line">
                 <ScrollPlayVideo
                   src={meta.video.src}
                   poster={meta.video.poster}
