@@ -54,7 +54,7 @@ const uk: Dictionary = {
     toolsLabel: "ІНСТРУМЕНТИ",
     tools: ["Figma", "Claude Code", "Vercel", "GitHub", "Webflow", "Framer"],
     industriesLabel: "ІНДУСТРІЇ",
-    industries: ["Ментальне здоров'я", "EdTech", "Automotive", "E-commerce"],
+    industries: ["Automotive", "E-commerce", "Fashion", "Healthtech", "Fintech", "SaaS"],
     ctaContact: "Зв'язатися",
     ctaWorks: "Переглянути роботи",
   },

@@ -307,7 +307,6 @@ export default async function ProjectPage({
                     className="h-full w-full object-cover"
                   />
                 )}
-                <div className="tech-grid pointer-events-none absolute inset-0" />
                 <div
                   className="pointer-events-none absolute inset-0 border border-line"
                   style={{ borderRadius: `${meta.video.rounded}px` }}

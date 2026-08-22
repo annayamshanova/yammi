@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Sora, JetBrains_Mono } from "next/font/google";
+import { SiteLoader } from "@/components/SiteLoader";
 import "./globals.css";
+
+const PRELOADER_CHECK = `try{if(sessionStorage.getItem('yammi-loaded')){document.documentElement.classList.add('no-preloader')}}catch(e){}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://yammi.me"),
@@ -21,7 +24,11 @@ const mono = JetBrains_Mono({
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html className={`${sora.variable} ${mono.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <script dangerouslySetInnerHTML={{ __html: PRELOADER_CHECK }} />
+        <SiteLoader />
+        {children}
+      </body>
     </html>
   );
 }

@@ -90,6 +90,25 @@ body {
   animation: scan 3.2s linear infinite;
 }
 
+.site-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-ink);
+  transform: translateY(0);
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.site-loader[data-exiting="true"] {
+  transform: translateY(-100%);
+}
+html.no-preloader .site-loader {
+  display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .cursor-blink,
   .animate-scan {
@@ -97,5 +116,8 @@ body {
   }
   html {
     scroll-behavior: auto;
+  }
+  .site-loader {
+    transition: none;
   }
 }

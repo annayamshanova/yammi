@@ -54,7 +54,7 @@ const de: Dictionary = {
     toolsLabel: "TOOLS",
     tools: ["Figma", "Claude Code", "Vercel", "GitHub", "Webflow", "Framer"],
     industriesLabel: "BRANCHEN",
-    industries: ["Mental Health", "EdTech", "Automotive", "E-Commerce"],
+    industries: ["Automotive", "E-Commerce", "Fashion", "Healthtech", "Fintech", "SaaS"],
     ctaContact: "Kontakt aufnehmen",
     ctaWorks: "Arbeiten ansehen",
   },

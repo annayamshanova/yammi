@@ -114,7 +114,7 @@ const en: {
     toolsLabel: "TOOLS",
     tools: ["Figma", "Claude Code", "Vercel", "GitHub", "Webflow", "Framer"],
     industriesLabel: "INDUSTRIES",
-    industries: ["Mental Health", "EdTech", "Automotive", "E-commerce"],
+    industries: ["Automotive", "E-commerce", "Fashion", "Healthtech", "Fintech", "SaaS"],
     ctaContact: "Get in touch",
     ctaWorks: "See the works",
   },
