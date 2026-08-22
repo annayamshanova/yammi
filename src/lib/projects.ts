@@ -146,17 +146,17 @@ const en: ProjectDictionary = {
     tagline:
       "A physical-book subscription concept built solo in four days, from idea to an investor-ready prototype.",
     overview:
-      "Shelfy lets people subscribe to physical books and pick them up from branded boxes around the city instead of ordering delivery. I built the whole concept solo in four days, from the first idea to a high-fidelity, investor-facing prototype in Figma, to show how fast I can take a project from zero to a clickable product.",
+      "Shelfy lets people subscribe to physical books and pick them up from branded boxes around the city instead of ordering delivery. I developed the concept solo in four days, from idea to a high-fidelity prototype in Figma. I wanted to show how fast I can take a project from zero to a clickable product.",
     challenge:
-      "I set myself a tight four-day clock to take a project from idea to an investor-ready prototype, research included. Physical books are having a moment again, especially with Gen Z stepping back from their phones toward analog hobbies, and I wanted a concept that also leaned into reuse and sustainability.",
+      "I set myself a 4-day goal: take a project from idea to a clickable prototype. Build a product I could present to an investor. Physical books are having a new wave of popularity, especially among Gen Z. Young people are picking up analog hobbies instead of scrolling social media. I also wanted to tie the concept to the growing relevance of reusing things.",
     approach:
-      "I worked in three stages: research, user flow, and design, moving from a blank page to a clickable, investor-ready prototype.",
+      "I worked in three stages: research, user flow, and design.",
     research:
-      "I started with a market analysis. There were no direct competitors, only adjacent services, so I studied 10 comparable apps for their strengths and weaknesses. Then I surveyed 30 people from the target audience through Google Forms. The results confirmed the concept was interesting and viable, and shaped what people expect from an app like this.",
+      "I started with a market analysis. There were no direct competitors, so I studied 10 comparable apps for their strengths and weaknesses. Then I surveyed 30 people from the target audience through Google Forms. The results confirmed the concept was interesting and viable, and showed what people expect from an app like this.",
     userFlow:
-      "Next I mapped the main user journeys. For the MVP I picked three key scenarios that cover the most important interactions: browsing and subscribing, finding a book and picking it up from a shelf, and returning a book by scanning its QR code.",
+      "I mapped the main user journeys. For the MVP I picked three key scenarios: onboarding and subscribing, finding a book and picking it up from a shelf, and returning a book by scanning its QR code.",
     designProcess:
-      "I moved from low-fidelity wireframes to high-fidelity screens, stage by stage. Along the way I designed a logo, chose fonts and a color palette, defined the tone of voice, and built a basic design system. From there I built highly detailed, clickable prototypes.",
+      "I moved from low-fidelity wireframes to high-fidelity screens. Alongside that, I designed a logo, chose fonts and a color palette, defined the tone of voice, and built a basic design system. After that, I put together detailed, clickable prototypes.",
     scope: {
       inMvp: [
         "Core subscription flow",
@@ -250,17 +250,17 @@ const de: ProjectDictionary = {
     tagline:
       "Ein Konzept für ein Physische-Bücher-Abo, allein in vier Tagen gebaut, von der Idee zum investor-reifen Prototyp.",
     overview:
-      "Shelfy lässt Menschen physische Bücher abonnieren und sie an gebrandeten Boxen in der Stadt abholen, statt sie liefern zu lassen. Ich habe das gesamte Konzept allein in vier Tagen gebaut, von der ersten Idee bis zu einem High-Fidelity-Prototyp für Investor:innen in Figma, um zu zeigen, wie schnell ich ein Projekt von null zu einem klickbaren Produkt bringen kann.",
+      "Shelfy lässt Menschen physische Bücher abonnieren und sie an gebrandeten Boxen in der Stadt abholen, statt sie liefern zu lassen. Ich habe das Konzept allein in vier Tagen entwickelt, von der Idee bis zu einem High-Fidelity-Prototyp in Figma. Ich wollte zeigen, wie schnell ich ein Projekt von null zu einem klickbaren Produkt bringen kann.",
     challenge:
-      "Ich habe mir selbst vier Tage gesetzt, um ein Projekt von der Idee zu einem investor-reifen Prototyp zu bringen, inklusive Recherche. Physische Bücher erleben gerade ein Comeback, besonders bei der Gen Z, die sich von ihren Handys abwendet und zu analogen Hobbys zurückkehrt, und ich wollte ein Konzept, das auch auf Wiederverwendung und Nachhaltigkeit setzt.",
+      "Ich habe mir ein 4-Tage-Ziel gesetzt: von der Idee zu einem klickbaren Prototyp zu kommen. Ein Produkt zu bauen, das ich einem Investor präsentieren kann. Physische Bücher erleben gerade einen neuen Popularitätsschub, besonders bei der Gen Z. Junge Menschen suchen sich analoge Hobbys, statt durch soziale Medien zu scrollen. Ich wollte das Konzept außerdem mit der wachsenden Relevanz der Wiederverwendung von Dingen verknüpfen.",
     approach:
-      "Ich habe in drei Etappen gearbeitet: Recherche, User Flow und Design, von einem leeren Blatt bis zu einem klickbaren, investor-reifen Prototyp.",
+      "Ich habe in drei Etappen gearbeitet: Recherche, User Flow und Design.",
     research:
-      "Ich habe mit einer Marktanalyse angefangen. Es gab keine direkten Konkurrenten, nur verwandte Services, also habe ich 10 vergleichbare Apps auf Stärken und Schwächen untersucht. Danach habe ich 30 Personen aus der Zielgruppe über Google Forms befragt. Die Ergebnisse bestätigten, dass das Konzept interessant und tragfähig ist, und zeigten, was Nutzer:innen von so einer App erwarten.",
+      "Ich habe mit einer Marktanalyse angefangen. Es gab keine direkten Konkurrenten, also habe ich 10 vergleichbare Apps auf Stärken und Schwächen untersucht. Danach habe ich 30 Personen aus der Zielgruppe über Google Forms befragt. Die Ergebnisse bestätigten, dass das Konzept interessant und tragfähig ist, und zeigten, was Nutzer:innen von so einer App erwarten.",
     userFlow:
-      "Als Nächstes habe ich die wichtigsten User Journeys kartiert. Für das MVP habe ich drei zentrale Szenarien ausgewählt, die die wichtigsten Interaktionen abdecken: stöbern und abonnieren, ein Buch finden und an einem Regal abholen, und ein Buch per QR-Scan zurückgeben.",
+      "Ich habe die wichtigsten User Journeys kartiert. Für das MVP habe ich drei zentrale Szenarien ausgewählt: Onboarding und Abo, ein Buch finden und an einem Regal abholen, und ein Buch per QR-Scan zurückgeben.",
     designProcess:
-      "Ich bin Schritt für Schritt von Low-Fidelity-Wireframes zu High-Fidelity-Screens gegangen. Dabei habe ich ein Logo entworfen, Schriften und eine Farbpalette gewählt, den Tone of Voice festgelegt und ein einfaches Designsystem gebaut. Danach habe ich sehr detaillierte, klickbare Prototypen gebaut.",
+      "Ich bin von Low-Fidelity-Wireframes zu High-Fidelity-Screens gegangen. Parallel dazu habe ich ein Logo entworfen, Schriften und eine Farbpalette gewählt, den Tone of Voice festgelegt und ein einfaches Designsystem gebaut. Danach habe ich detaillierte, klickbare Prototypen zusammengestellt.",
     scope: {
       inMvp: [
         "Kern-Abo-Flow",
@@ -354,17 +354,17 @@ const uk: ProjectDictionary = {
     tagline:
       "Концепція підписки на фізичні книги, зроблена самостійно за чотири дні, від ідеї до прототипу для інвестора.",
     overview:
-      "Shelfy дозволяє оформити підписку на фізичні книги і забирати їх із брендованих боксів у місті замість доставки. Я зробила всю концепцію самостійно за чотири дні, від першої ідеї до high-fidelity прототипу для інвестора у Figma, щоб показати, наскільки швидко можу довести проєкт з нуля до клікабельного продукту.",
+      "Shelfy дозволяє оформити підписку на фізичні книги і забирати їх із брендованих боксів у місті замість доставки. Я розробила концепцію самостійно за чотири дні, від ідеї до high-fidelity прототипу у Figma. Я хотіла показати, наскільки швидко можу довести проєкт з нуля до клікабельного продукту.",
     challenge:
-      "Я поставила собі чотири дні, щоб пройти шлях від ідеї до прототипу, готового для інвестора, включно з дослідженням. Фізичні книги переживають новий сплеск популярності, особливо серед Gen Z, яка відходить від телефонів до аналогових хобі, і я хотіла концепцію, що спирається ще й на повторне використання та стійкість.",
+      "Я поставила собі ціль на 4 дні: пройти шлях від ідеї до клікабельного прототипу. Створити продукт, який можна презентувати інвестору. Фізичні книги переживають новий сплеск популярності, особливо серед Gen Z. Молоді люди знаходять собі аналогові хобі, замість того, щоб скролити соціальні мережі. Я хотіла також зачепити актуальність повторного використання речей у своїй концепції.",
     approach:
-      "Я працювала в три етапи: дослідження, user flow і дизайн, від чистого аркуша до клікабельного прототипу, готового для інвестора.",
+      "Я працювала в три етапи: дослідження, user flow і дизайн.",
     research:
-      "Я почала з аналізу ринку. Прямих конкурентів не було, лише суміжні сервіси, тож я розібрала 10 подібних застосунків на сильні та слабкі сторони. Далі опитала 30 людей із цільової аудиторії через Google Forms. Результати підтвердили, що концепція цікава і життєздатна, і показали, чого користувачі очікують від такого застосунку.",
+      "Я почала з аналізу ринку. Прямих конкурентів не було, тож я розібрала 10 подібних застосунків на сильні та слабкі сторони. Далі опитала 30 людей із цільової аудиторії через Google Forms. Результати підтвердили, що концепція цікава і життєздатна, і показали, чого користувачі очікують від такого застосунку.",
     userFlow:
-      "Далі я побудувала основні user journey. Для MVP я обрала три ключові сценарії, що охоплюють найважливіші взаємодії: перегляд і підписку, пошук книги та отримання її з шафи, і повернення книги через сканування QR-коду.",
+      "Я побудувала основні user journey. Для MVP обрала три ключові сценарії: знайомство і підписка, пошук книги та отримання її з шафи, а також повернення книги через сканування QR-коду.",
     designProcess:
-      "Я пройшла шлях від low-fidelity вайрфреймів до high-fidelity екранів крок за кроком. Паралельно розробила логотип, обрала шрифти й кольорову палітру, визначила tone of voice і побудувала базову дизайн-систему. Після цього зібрала дуже детальні клікабельні прототипи.",
+      "Я пройшла шлях від low-fidelity вайрфреймів до high-fidelity екранів. Паралельно розробила логотип, обрала шрифти й кольорову палітру, визначила tone of voice і побудувала базову дизайн-систему. Після цього зібрала детальні клікабельні прототипи.",
     scope: {
       inMvp: [
         "Основний флоу підписки",
