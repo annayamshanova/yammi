@@ -51,6 +51,16 @@ function withSecurityHeaders(response: NextResponse) {
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  // Canonicalize on the apex domain so search engines don't index the
+  // same content twice under www and non-www.
+  if (request.nextUrl.hostname === "www.yammi.me") {
+    const url = request.nextUrl.clone();
+    url.hostname = "yammi.me";
+    return withSecurityHeaders(
+      NextResponse.redirect(url, { status: 308 })
+    );
+  }
+
   const pathnameHasLocale = locales.some(
     (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
   );

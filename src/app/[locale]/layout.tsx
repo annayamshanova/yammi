@@ -16,9 +16,39 @@ export async function generateMetadata({
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const dict = getDictionary(locale);
+
+  const ogLocale = { en: "en_US", de: "de_DE", uk: "uk_UA" }[locale];
+
   return {
-    title: dict.meta.title,
+    title: {
+      template: `%s · YAMMI`,
+      default: dict.meta.title,
+    },
     description: dict.meta.description,
+    alternates: {
+      canonical: `/${locale}`,
+      languages: {
+        en: "/en",
+        de: "/de",
+        uk: "/uk",
+        "x-default": "/en",
+      },
+    },
+    openGraph: {
+      title: dict.meta.title,
+      description: dict.meta.description,
+      url: `/${locale}`,
+      siteName: "YAMMI",
+      locale: ogLocale,
+      type: "website",
+      images: ["/opengraph-image.png"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: dict.meta.title,
+      description: dict.meta.description,
+      images: ["/opengraph-image.png"],
+    },
   };
 }
 

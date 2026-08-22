@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -25,6 +26,22 @@ export function generateStaticParams() {
 
 function isProjectSlug(value: string): value is ProjectSlug {
   return (projectSlugs as string[]).includes(value);
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  if (!isLocale(locale) || !isProjectSlug(slug)) return {};
+  const copy = getProjectCopy(locale, slug);
+  return {
+    title: copy.name,
+    description: copy.tagline,
+    alternates: { canonical: `/${locale}/works/${slug}` },
+    openGraph: { title: copy.name, description: copy.tagline },
+  };
 }
 
 export default async function ProjectPage({

@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import { Sora, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://yammi.me"),
+};
 
 const sora = Sora({
   variable: "--font-sora",

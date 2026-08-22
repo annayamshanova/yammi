@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
@@ -5,6 +6,22 @@ import { getAllProjects } from "@/lib/projects";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { ProjectTile } from "@/components/ProjectTile";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  const dict = getDictionary(locale);
+  return {
+    title: dict.works.title,
+    description: dict.works.subtitle,
+    alternates: { canonical: `/${locale}/works` },
+    openGraph: { title: dict.works.title, description: dict.works.subtitle },
+  };
+}
 
 export default async function WorksPage({
   params,

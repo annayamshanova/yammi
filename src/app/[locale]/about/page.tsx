@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -6,6 +7,23 @@ import { getDictionary } from "@/i18n/get-dictionary";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { Reveal } from "@/components/Reveal";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  const dict = getDictionary(locale);
+  const description = dict.about.intro[0];
+  return {
+    title: dict.about.title,
+    description,
+    alternates: { canonical: `/${locale}/about` },
+    openGraph: { title: dict.about.title, description },
+  };
+}
 
 export default async function AboutPage({
   params,
