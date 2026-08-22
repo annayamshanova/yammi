@@ -115,7 +115,7 @@ export default async function ProjectPage({
               rel="noopener noreferrer"
               className="mt-5 inline-flex items-center gap-2 border border-ink px-5 py-3 font-mono text-xs tracking-widest transition-colors hover:bg-ink hover:text-paper"
             >
-              [ {dict.project.viewLive.toUpperCase()} ↗ ]
+              [ {(copy.liveLinkLabel ?? dict.project.viewLive).toUpperCase()} ↗ ]
             </a>
           )}
         </Reveal>
@@ -266,7 +266,7 @@ export default async function ProjectPage({
               </p>
             </Reveal>
             <Reveal delay={0.05}>
-              <div className="relative mx-auto aspect-[676/1402] w-full max-w-xs overflow-hidden rounded-[15px] border border-line">
+              <div className="relative mx-auto aspect-[676/1402] w-full max-w-xs overflow-hidden rounded-[18px] border border-line">
                 <ScrollPlayVideo
                   src={meta.video.src}
                   poster={meta.video.poster}

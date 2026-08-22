@@ -55,7 +55,6 @@ export const projectMeta: Record<ProjectSlug, ProjectMeta> = {
     pattern: 7,
     liveUrl:
       "https://www.figma.com/design/1VAH3wZLfASsfLSUDVyU8r/MVP-Shelfy?node-id=0-1",
-    coverImage: "/works/shelfy-cover.png",
     tools: "Figma",
     video: {
       src: "/works/shelfy/prototype-walkthrough.mp4",
@@ -83,6 +82,7 @@ type ProjectCopy = {
   };
   outcome: string;
   results?: string[];
+  liveLinkLabel?: string;
 };
 
 type ProjectDictionary = Record<ProjectSlug, ProjectCopy>;
@@ -188,6 +188,7 @@ const en: ProjectDictionary = {
       "Built a scalable design system: logo, palette, type, and components",
       "Ran research, design, and prototyping solo end to end",
     ],
+    liveLinkLabel: "Open in Figma",
   },
 };
 
@@ -292,6 +293,7 @@ const de: ProjectDictionary = {
       "Ein skalierbares Designsystem gebaut: Logo, Farbpalette, Typografie und Komponenten",
       "Recherche, Design und Prototyping allein end-to-end durchgeführt",
     ],
+    liveLinkLabel: "In Figma öffnen",
   },
 };
 
@@ -396,6 +398,7 @@ const uk: ProjectDictionary = {
       "Побудувала дизайн-систему, яку можна масштабувати: логотип, палітра, шрифти, компоненти",
       "Самостійно пройшла дослідження, дизайн і прототипування від початку до кінця",
     ],
+    liveLinkLabel: "Відкрити у Figma",
   },
 };
 
