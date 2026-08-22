@@ -274,7 +274,6 @@ export default async function ProjectPage({
                 style={{
                   aspectRatio: meta.video.aspect.replace("/", " / "),
                   borderRadius: `${meta.video.rounded}px`,
-                  boxShadow: "inset 0 0 0 1px var(--color-line)",
                 }}
               >
                 {meta.video.mode === "click" ? (
@@ -292,6 +291,10 @@ export default async function ProjectPage({
                   />
                 )}
                 <div className="tech-grid pointer-events-none absolute inset-0" />
+                <div
+                  className="pointer-events-none absolute inset-0 border border-line"
+                  style={{ borderRadius: `${meta.video.rounded}px` }}
+                />
               </div>
             </Reveal>
           </div>
